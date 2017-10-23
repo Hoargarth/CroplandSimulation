@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CroplandSimulation.iml" filepath="$PROJECT_DIR$/CroplandSimulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CroplandSimulation_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CroplandSimulation_main.iml" group="CroplandSimulation" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CroplandSimulation_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CroplandSimulation_test.iml" group="CroplandSimulation" />
     </modules>
   </component>
 </project>
