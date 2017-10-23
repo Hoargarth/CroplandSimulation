@@ -1,4 +1,5 @@
 import com.sun.javafx.geom.Matrix3f;
+import geometry.Landscape;
 import geometry.Triangle;
 import javafx.geometry.Point3D;
 
@@ -82,18 +83,9 @@ public class Simulation {
 
                 Matrix3f transform = multiply(headingTransform, pitchTransform);
 
-                for (Triangle t : tris) {
-                    Point3D v1 = transform(t.getV1(), transform);
-                    Point3D v2 = transform(t.getV2(), transform);
-                    Point3D v3 = transform(t.getV3(), transform);
+                Landscape landscape = new Landscape();
 
-                    Path2D path = new Path2D.Double();
-                    path.moveTo(v1.getX(),  v1.getY());
-                    path.lineTo(v2.getX(),  v2.getY());
-                    path.lineTo(v3.getX(),  v3.getY());
-                    path.closePath();
-                    g2.draw(path);
-                }
+                landscape.render(transform, g2);
 
             }
         };
