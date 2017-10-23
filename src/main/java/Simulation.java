@@ -28,6 +28,7 @@ public class Simulation {
         JSlider pitchSlider = new JSlider(SwingConstants.VERTICAL, -90, 90, 0);
         pane.add(pitchSlider, BorderLayout.EAST);
 
+        Landscape landscape = new Landscape();
 
         // panel to display render results
         JPanel renderPanel = new JPanel() {
@@ -83,7 +84,6 @@ public class Simulation {
 
                 Matrix3f transform = multiply(headingTransform, pitchTransform);
 
-                Landscape landscape = new Landscape();
 
                 landscape.render(transform, g2);
 

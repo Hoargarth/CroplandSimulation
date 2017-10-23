@@ -9,6 +9,7 @@ import java.awt.geom.Path2D;
 
 
 public class Landscape {
+    public static final int RENDERING_MULTIPLICATOR = 25;
     private Point3D points[][];
 
     public Landscape() {
@@ -22,7 +23,7 @@ public class Landscape {
 
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                points[i][j] = new Point3D(i * 50, j * 50, rand.nextFloat());
+                points[i][j] = new Point3D(i * RENDERING_MULTIPLICATOR, j * RENDERING_MULTIPLICATOR, rand.nextFloat()* RENDERING_MULTIPLICATOR);
             }
         }
     }
