@@ -8,9 +8,12 @@ public class ColorPointConversion {
     public static final int MIN_VALUE = 0;
 
     static public Point3D convertColorToPoint(int i) {
-        if (i >= 255) {
-            return new Point3D(0, 0, MAX_VALUE);
-        }
-        return new Point3D(0, 0, MIN_VALUE);
+
+        final int diff = MAX_VALUE - MIN_VALUE;
+
+        final double result = i * MAX_VALUE / 255;
+
+        return new Point3D(0, 0, MIN_VALUE + result);
+
     }
 }
