@@ -5,7 +5,7 @@ public class Simulation {
 
         String heightMap;
 
-        while (ConsoleControler.fileDialogReturn == 1) {
+        while (ConsoleController.fileDialogReturn == 1) {
 
             //Prompt user for input
             System.out.println("You have to select a gray-scale height map with .png file format from your folder.\nPress ENTER to open your file browser:");
@@ -14,7 +14,7 @@ public class Simulation {
             * Todo: User needs to see the what to do, eg. press enter before filechooser pops up
             * */
 
-            heightMap = ConsoleControler.SelectGrayScaleHeightMap();
+            heightMap = ConsoleController.SelectGrayScaleHeightMap();
 
             System.out.println(heightMap);
         }

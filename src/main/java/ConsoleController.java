@@ -1,7 +1,7 @@
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-public class ConsoleControler {
+public class ConsoleController {
 
     public static int fileDialogReturn = 1;
 
