@@ -1,11 +1,11 @@
 
 
 public class Simulation {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         String heightMap;
 
-        while (ConsoleControler.fileDialogReturn == 1){
+        while (ConsoleControler.fileDialogReturn == 1) {
 
             //Prompt user for input
             System.out.println("You have to select a gray-scale height map with .png file format from your folder.\nPress ENTER to open your file browser:");
